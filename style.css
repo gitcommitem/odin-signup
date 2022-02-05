@@ -1,73 +1,97 @@
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Manrope&display=swap');
+
+*{
+    font-family: 'Manrope', sans-serif;
 }
 
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
+.hflex{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
-  list-style: none;
+.vflex{
+    display: flex;
+    flex-direction: column;
 }
 
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
+#page-cont{
+    height: 100vh;
 }
 
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+#sidebar{
+    background-color: blue;
+    width: 30%;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
+#logo-cont{
+    background-color: rgba(0, 0, 0, 0.491);
+    position: relative;
+    top: 15%;
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
+img{
+    width: 6.5rem;
+    position: relative;
+    top: 0.2rem;
+    border: 2px solid white;
+    border-radius: 1rem;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
+h1{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 3.4rem;
+    line-height: 101%;
+    color: white;
+    text-align: center;
 }
 
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+h2{
+    margin-bottom: 2rem;
+}
+
+main{
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+    background-color: #FAFAFA;
+    width: 70%;
+    justify-content: center;
+}
+
+.margin{
+    margin-left: 3rem;
+}
+
+#form-cont{
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+label{
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+}
+
+input{
+    padding: 0.5rem;
+    border: 1px solid lightgray;
+    border-radius: 0.2rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    width: 29ch;
+}
+
+button{
+    padding: 0.5rem;
+    width: 24ch;
+    margin-bottom: 1rem;
 }
