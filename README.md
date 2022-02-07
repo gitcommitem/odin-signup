@@ -1,5 +1,5 @@
 # TOP Intermediate HTML/CSS Course Project - Sign-up Page
-02/04/2022 ~
+02/04/2022 ~ 02/07/2022
 
 ## Objectives
 
@@ -13,3 +13,4 @@ Colours and content of the sign-up page can be customized.
 
 ## Learnings
 
+Started to use the introduced emmet shortcuts and found them to be very helpful.
